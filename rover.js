@@ -1,21 +1,19 @@
+const Message = require("./message");
+
 class Rover {
-   constructor(position, result) {
-     this.position = position;
-       if (!position) {
-       throw Error("Number required as position.");
-        }
-        // this.commands = [new Command('MODE_CHANGE', 'LOW_POWER'), new Command('STATUS_CHECK')];
-        this.result = rover.recieveMsg(message);
-        this.mode = "NORMAL";
-        if (!mode) {
-          throw Error("Default values required");
-        }
-        this.generatorWatts = 110;
-        if (!generatorWatts) {
-          throw Error("Default values required");
-        }
-        
+   constructor(position, mode="NORMAL", wattage=110) {
+      this.position = position;
+      this.mode = mode;
+      this.wattage = wattage;
       }
+   recieveMessage(message) {
+      let response = {
+         message : message.name,
+         results : []
+      }
+      return response;
+   }
+
 }
 
 module.exports = Rover;
