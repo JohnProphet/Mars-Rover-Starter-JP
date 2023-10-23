@@ -1,11 +1,14 @@
 class Rover {
-   constructor(position, commands, result) {
+   constructor(position, result) {
      this.position = position;
        if (!position) {
        throw Error("Number required as position.");
         }
-        this.commands = commands;
-        this.result = result;
+        // let commands = [new Command('MODE_CHANGE', 'LOW_POWER'), new Command('STATUS_CHECK')];
+        // let result = rover.recieveMsg(message);
+        // let mode = "NORMAL";
+        // let generatorWatts = 110;
+
       }
 }
 
