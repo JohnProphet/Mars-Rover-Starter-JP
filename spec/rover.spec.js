@@ -19,11 +19,11 @@ describe("Rover class", function() {
     });
   
   //test 8
-//   it("response returned by recieveMessage contains the name of the message", function() {
-//       // expect( function() {   
+// it("response returned by recieveMessage contains the name of the message", function() {
+//     expect(receiveMessage(message)).toBe(message.name, results);    
 //       // let sampleRecieveMessage = response;
 //       // expect(sampleRecieveMessage).toInclude(message.name);  
-//     });
+//       });
 
 //   //test 9 
 //   it("response returned by recieveMessage includes two results if two commands are sent in the message", function() {
@@ -33,19 +33,17 @@ describe("Rover class", function() {
 
 //   //test 10
 //   it("responds correctly to the status check command", function() {
-
 //   })
+
 //   //test 11
 //   it("responds correctly to the mode change command", function() {
-
 //   })
-// //test 12
-//   it("responds with a false completed value when attempting to move in LOW_POWER mode", function() {
 
+//   //test 12
+//   it("responds with a false completed value when attempting to move in LOW_POWER mode", function() {
 //   })
 //   //test 13
 //   it("responds with the position for the move command", function () {
-    
 //   })
 });
 });
