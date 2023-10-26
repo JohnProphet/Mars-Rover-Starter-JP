@@ -9,7 +9,7 @@ const Command = require('../command.js');
 // and RETURNS results
 
 describe("Rover class", function() {
-
+//test 7
   it("constructor sets position and default values for mode and generatorWatts", function() {
     expect( function() {       
       let sampleRoverObject = new Rover(98382);   
@@ -17,13 +17,35 @@ describe("Rover class", function() {
       let sampleGenerator = wattage;
       expect(sampleGenerator).toBe(110);
     });
-    
-  // it("response returned by recieveMessage contains the name of the message", function() {
-  //     expect( function() {   
-  //     let sampleRecieveMessage = response;
-  //     expect(sampleRecieveMessage.name).toBe(message.name);  
-  //   });
-  // });
-});
+  
+  //test 8
+//   it("response returned by recieveMessage contains the name of the message", function() {
+//       // expect( function() {   
+//       // let sampleRecieveMessage = response;
+//       // expect(sampleRecieveMessage).toInclude(message.name);  
+//     });
 
+//   //test 9 
+//   it("response returned by recieveMessage includes two results if two commands are sent in the message", function() {
+//     //expect two results
+//   })  
+//   });
+
+//   //test 10
+//   it("responds correctly to the status check command", function() {
+
+//   })
+//   //test 11
+//   it("responds correctly to the mode change command", function() {
+
+//   })
+// //test 12
+//   it("responds with a false completed value when attempting to move in LOW_POWER mode", function() {
+
+//   })
+//   //test 13
+//   it("responds with the position for the move command", function () {
+    
+//   })
+});
 });
