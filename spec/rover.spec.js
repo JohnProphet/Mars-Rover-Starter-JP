@@ -11,8 +11,19 @@ const Command = require('../command.js');
 describe("Rover class", function() {
 
   it("constructor sets position and default values for mode and generatorWatts", function() {
-    expect( function() { new Message();}).toThrow(new Error("Default values required"));
-  });
-
+    expect( function() {       
+      let sampleRoverObject = new Rover(98382);   
+      expect(sampleRoverObject.mode).toBe(98382);
+      let sampleGenerator = wattage;
+      expect(sampleGenerator).toBe(110);
+    });
+    
+  // it("response returned by recieveMessage contains the name of the message", function() {
+  //     expect( function() {   
+  //     let sampleRecieveMessage = response;
+  //     expect(sampleRecieveMessage.name).toBe(message.name);  
+  //   });
+  // });
+});
 
 });
