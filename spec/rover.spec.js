@@ -17,13 +17,13 @@ describe("Rover class", function() {
       let sampleGenerator = wattage;
       expect(sampleGenerator).toBe(110);
     });
+  });
   
   //test 8
-// it("response returned by recieveMessage contains the name of the message", function() {
-//     expect(receiveMessage(message)).toBe(message.name, results);    
-//       // let sampleRecieveMessage = response;
-//       // expect(sampleRecieveMessage).toInclude(message.name);  
-//       });
+  it("response returned by recieveMessage contains the name of the message", function() {
+    let sampleRecieveMessage = new Rover(98382)
+    expect(receiveMessage(message)).toBe(message.name, results);    
+      });
 
 //   //test 9 
 //   it("response returned by recieveMessage includes two results if two commands are sent in the message", function() {
@@ -45,5 +45,4 @@ describe("Rover class", function() {
 //   //test 13
 //   it("responds with the position for the move command", function () {
 //   })
-});
 });
