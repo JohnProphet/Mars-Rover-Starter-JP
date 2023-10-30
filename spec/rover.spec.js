@@ -55,4 +55,5 @@ it("responds correctly to the status check command", function() {
 //   //test 13
 //   it("responds with the position for the move command", function () {
 //   })
-})
+});
+});
