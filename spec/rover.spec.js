@@ -29,8 +29,12 @@ describe("Rover class", function() {
       let commands = [new Command('MODE_CHANGE', 'LOW_POWER'), new Command('STATUS_CHECK')];
       let message = new Message('sampleRover', commands);
        let sampleRover = new Rover("sampleRover", 98382, "NORMAL", 155);    //expect two results
-      expect(sampleRover.position).toBe(98382); // returns 98382
-      expect(sampleRover.mode).toBe("NORMAL"); // returns "NORMAL"
+       expect(response.results[1].length).toEqual(2);
+       expect(response.results[1].roverStatus.position).toEqual(98382);
+       expect(response.results[1].roverStatus.mode).toEqual("LOW_POWER");
+       expect(response.results[1].roverStatus.generatorWatts).toEqual(110);
+       // expect(sampleRover.position).toBe(98382); // returns 98382
+      // expect(sampleRover.mode).toBe("NORMAL"); // returns "NORMAL"
       })  
     });
 
