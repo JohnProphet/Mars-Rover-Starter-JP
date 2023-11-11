@@ -8,12 +8,12 @@ class Command {
    }
   }
 class Message {
-    constructor(name, value) {
+    constructor(name, commands) {
       this.name = name;
       if (!name) {
         throw Error("Name required as first parameter.");
       }
-      this.value = value;
+      this.commands = commands;
     }
   
  }

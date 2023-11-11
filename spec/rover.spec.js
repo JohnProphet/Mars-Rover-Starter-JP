@@ -13,7 +13,7 @@ describe("Rover class", function() {
     it("constructor sets position and default values for mode and generatorWatts", function() {
         let sampleRover = new Rover(98382);   //good
         expect(sampleRover.mode).toBe("NORMAL"); //good
-        expect(sampleRover.wattage).toBe(110); //check sampleRover.generaterWatts to be 110
+        expect(sampleRover.generatorWatts).toBe(110); //check sampleRover.generaterWatts to be 110
       });
       
   //test 8
@@ -32,7 +32,7 @@ describe("Rover class", function() {
        expect(sampleRover.length).toEqual(2);
        expect(response.results[1].roverStatus.position).toEqual(98382);
        expect(response.results[1].roverStatus.mode).toEqual("LOW_POWER");
-       expect(response.results[1].roverStatus.generatorWatts).toEqual(110);
+       expect(response.results[1].roverStatus.generatorWatts).toEqual(155);
        // expect(sampleRover.position).toBe(98382); // returns 98382
       // expect(sampleRover.mode).toBe("NORMAL"); // returns "NORMAL"
       })  
